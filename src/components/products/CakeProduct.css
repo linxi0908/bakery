@@ -1,0 +1,173 @@
+.product {
+    width: 100%;
+  }
+  .product .container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .product .container .row {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .product .container .list{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .product .container .row .col {
+    margin: 1rem 0;
+  }
+  .product .container .row .banner_shop {
+    position: relative;
+  }
+  .product .container .row .banner_shop img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    height: 250px;
+  }
+  .product .container .row .banner_shop h3 {
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: "Montserrat";
+    font-weight: 900;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .product .container .row .banner_shop h3::after {
+    content:" ";
+    background: #fdb822;
+      font-weight: 900;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      height: 0.2rem;
+      width:6rem;
+      z-index: 5;
+  }
+  
+  .product .container .row .col .product_list {
+    position: relative;
+  }
+  .product .container .row .col .product_list .card{
+    margin: 0 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .product .container .row .col .product_list .card .card-body{
+    padding: 0;
+  }
+  .product .container .row .col .product_list .card .card-body .card-title {
+    color: #684f40;
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+  }
+  .product .container .row .col .product_list .card .card-body .card-text {
+    font-size: 0.9rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  .product .container .row .col .product_list .card .card-body .price {
+    color: #fdb925;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+  }
+  .product .container .row .col .product_list .shopping .icon {
+    text-align: center;
+    margin: 0 0.3rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+  .product .container .row .col .product_list .shopping .icon button {
+    color: #fff;
+    text-align: center;
+    background: #fdb925;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5rem;
+  }
+  .product .container .row .col .product_list .shopping .icon button a {
+    color: #fff;
+  }
+  .product .container .row .col .product_list .shopping .icon button svg {
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 15%;
+  }
+  .product .container .row .col .product_list .shopping .icon .btn svg {
+    font-size: 1.4rem;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 15%;
+  }
+  .product .container .row .col .product_list .shopping .icon button:hover {
+    background:#684f40;
+  }
+  #popup-root .popup-overlay{
+    background: #3c3c3c88;
+    display: flex;
+    flex-wrap: nowrap;
+    position: fixed;
+  }
+  #popup-root .popup-overlay .popup-content button{
+    background: #b3b1b188;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    position:fixed;
+    top:0;
+    right: 0;
+    cursor: pointer;
+  }
+  #popup-root .popup-overlay .popup-content img{
+    width: 20em;
+  }
+  @media screen and (min-width: 320px) and (max-width: 2500px) {
+    .container,
+    .container .row,
+    .container .row .banner_shop,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      max-width: 100% !important;
+      padding: 0;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 576px) {
+    .product .container .row .banner_shop img {
+      height: 100px;
+    }
+    .product .container .row .banner_shop h3 {
+     font-size: 1rem;
+    }
+    .product .container .row .banner_shop h3::after {
+      content:" ";
+      width:3.5rem;
+    }
+  }
+  @media screen and (min-width: 558px) and (max-width: 768px) {
+    .product .container .row .banner_shop img {
+      height: 120px;
+    }
+    .product .container .row .banner_shop h3 {
+     font-size: 1.2rem;
+    }
+    .product .container .row .banner_shop h3::after {
+      content:" ";
+      width:4.5rem;
+    }
+  }
+  

@@ -1,0 +1,492 @@
+.cart {
+  width: 100%;
+}
+.row > * {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.cart .container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cart .container .row {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.cart .container .row .col {
+  margin: 1rem 0;
+}
+.cart .container .row .banner_cart {
+  position: relative;
+}
+.cart .container .row .banner_cart img {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  height: 250px;
+}
+.cart .container .row .banner_cart h3 {
+  color: #fff;
+    font-family: "Montserrat";
+    font-weight: 900;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+.cart .container .row .banner_cart h3::after{
+  content:" ";
+  background: #fdb822;
+    font-weight: 900;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    height: 0.2rem;
+    width: 5rem;
+    z-index: 5;
+}
+.cart .container .row .table-responsive-lg .table {
+  width: 70%;
+  border: 1px solid #dddddd;
+  padding-top: 1rem;
+  margin: 0rem auto;
+  margin-top: 2rem;
+}
+.cart .container .row .table-responsive-lg .table thead tr th {
+  background: #f9f9f9;
+  color: #343434;
+  height: 3rem;
+  font-size: 0.8rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  vertical-align: middle;
+}
+.cart .container .row .table-responsive-lg .table tbody tr td {
+  vertical-align: middle;
+  font-size: 0.8rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.cart .container .row .table-responsive-lg .table tbody tr th {
+  display: none;
+}
+.cart
+  .container
+  .row
+  .table-responsive-lg
+  .table
+  tbody
+  tr
+  .product-remove
+  button {
+  color: red;
+  border: 1px solid red;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 13px;
+  background: none;
+  cursor: pointer;
+  text-align: center;
+}
+.cart
+  .container
+  .row
+  .table-responsive-lg
+  .table
+  tbody
+  tr
+  .product-remove
+  button:hover {
+  color: #fff;
+  background: red;
+}
+.cart .container .row .table-responsive-lg .table tbody tr .product-name a {
+  color: #fdb925;
+  text-transform: capitalize;
+}
+.cart
+  .container
+  .row
+  .table-responsive-lg
+  .table
+  tbody
+  tr
+  .product-quantity
+  .quantity {
+  display: flex;
+  justify-content: center;
+}
+.cart
+  .container
+  .row
+  .table-responsive-lg
+  .table
+  tbody
+  tr
+  .product-quantity
+  .quantity
+  input {
+  width: 2.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  border-radius: 0px;
+  border: 1px solid #f1f1f1;
+  color: #343434;
+}
+.cart
+  .container
+  .row
+  .table-responsive-lg
+  .table
+  tbody
+  tr
+  .product-quantity
+  .quantity
+  button {
+  width: 2rem;
+  font-size: 0.8rem;
+  text-align: center;
+  border-radius: 0px;
+  border: none;
+}
+.cart
+  .container
+  .row
+  .table-responsive-lg
+  .table
+  tbody
+  tr
+  .product-quantity
+  .quantity
+  button:hover {
+  background: #343434;
+}
+.cart
+  .container
+  .row
+  .table-responsive-lg
+  .table
+  tbody
+  tr
+  .product-quantity
+  .quantity
+  button
+  svg {
+  color: #343434;
+}
+.cart
+  .container
+  .row
+  .table-responsive-lg
+  .table
+  tbody
+  tr
+  .product-quantity
+  .quantity
+  button:hover
+  svg {
+  color: #fff;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.cart .container .row .cart-total .table-responsive-lg {
+  width: 100%;
+  margin: 0 auto;
+}
+.cart .container .row .cart-total {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.cart .container .row .cart-total .table-responsive-lg .table2 {
+  color: #684f40;
+  font-size: 0.9rem;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  width: 100%;
+  margin: 0 auto;
+  border-top:none;
+}
+.cart .container .row .cart-total .table-responsive-lg .table2 tbody tr th {
+  display: block;
+}
+.cart .container .row .cart-total .table-responsive-lg .table2 tbody tr td {
+  text-align: end;
+}
+.cart
+  .container
+  .row
+  .cart-total
+  .table-responsive-lg
+  .table2
+  tbody
+  .order-total {
+  background: #f9f9f9;
+  color: #fdb822;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.cart .container .row .checkout {
+  width: 100%;
+  margin: 0 auto;
+}
+.cart .container .row .checkout .table-responsive-lg .table3 {
+  margin: 0 auto;
+  border: none;
+}
+.cart .container .row .checkout .table-responsive-lg .table3 tbody tr th {
+  border: none;
+}
+.cart .container .row .checkout .table-responsive-lg .table3 tbody tr td {
+  text-align: center;
+  border: none;
+}
+.cart
+  .container
+  .row
+  .checkout
+  .table-responsive-lg
+  .table3
+  tbody
+  tr
+  td
+  button {
+  width: 15rem;
+  height: 2rem;
+  border: 2px solid #684f40;
+  color: #684f40;
+  text-align: end;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background: #f0f0f0;
+}
+.cart
+  .container
+  .row
+  .checkout
+  .table-responsive-lg
+  .table3
+  tbody
+  tr
+  td
+  button:hover{
+    background: #684f40;
+  color: #fdb925;
+}
+@media screen and (min-width: 320px) and (max-width: 2500px) {
+  .container,
+  .container .row,
+  .container .row .banner_cart,
+  .container-lg,
+  .container-xs,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 100% !important;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 557px) {
+  .cart .container .row .banner_cart img {
+    height: 100px;
+  }
+  .cart .container .row .banner_cart h3 {
+    font-size: 1rem;
+  }
+  .cart .container .row .table-responsive-lg .table {
+    width: 90%;
+  }
+  .cart
+    .container
+    .row
+    .table-responsive-lg
+    .table
+    thead
+    tr
+    .product-thumbnail {
+    display: none;
+  }
+  .cart
+    .container
+    .row
+    .table-responsive-lg
+    .table
+    tbody
+    tr
+    .product-thumbnail {
+    display: none;
+  }
+  .cart .container .row .cart-total {
+    width: 90%;
+    margin: 0 auto;
+}
+  .cart
+    .container
+    .row
+    .checkout
+    .table-responsive-lg
+    .table3
+    tbody
+    tr
+    td
+    button {
+    height: 2rem;
+    border: 1px solid #684f40;
+  }
+  .cart
+    .container
+    .row
+    .checkout
+    .table-responsive-lg
+    .table3
+    tbody
+    tr
+    td
+    button
+    a {
+    color: #684f40;
+    text-align: end;
+    font-size: 0.7rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  .cart .container .row .cart-total .table-responsive-lg .table2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #F9F9F9;
+  }
+  .cart .container .row .checkout .table-responsive-lg .table3{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;
+  }
+  .cart .container .row .cart-total .table-responsive-lg .table2 tbody{
+    margin: 0;
+    padding: 0;
+    
+  }
+  .cart .container .row .cart-total .table-responsive-lg .table2 tbody tr{
+    display: flex;
+  
+  }
+  .cart .container .row .cart-total .table-responsive-lg .table2 tbody tr th{
+    width: 100% !important;
+  }
+  .cart .container .row .table-responsive-lg .table thead{
+    display: none;
+}
+  .cart .container .row .table-responsive-lg .table tbody tr td{
+    display: block;
+}
+.cart .container .row .table-responsive-lg .table tbody tr td::before{
+  content: attr(data-title) " ";
+  font-weight: 700;
+  float: left;
+}
+.cart .container .row .table-responsive-lg .table tbody tr .product-remove{
+  text-align: left;
+}
+.cart .container .row .table-responsive-lg .table tbody tr .product-name {
+  text-align: right !important;
+}
+.cart .container .row .table-responsive-lg .table tbody tr .product-price{
+  text-align: right !important;
+}
+.cart .container .row .table-responsive-lg .table tbody tr .product-subtotal{
+  text-align: right !important;
+}
+.cart .container .row .table-responsive-lg .table tbody tr td .quantity{
+  text-align: right !important;
+  justify-content: flex-end !important;
+}
+.cart .container .row .banner_cart h3::after{
+  content:" ";
+    width: 3rem;
+}
+}
+@media only screen and (min-width: 558px) and (max-width: 768px) {
+  .cart .container .row .banner_cart img {
+    height: 150px;
+  }
+  .cart .container .row .banner_cart h3 {
+    font-size: 1.2rem;
+  }
+  .cart
+    .container
+    .row
+    .table-responsive-lg
+    .table
+    thead
+    tr
+    .product-thumbnail {
+    display: none;
+  }
+  .cart
+    .container
+    .row
+    .table-responsive-lg
+    .table
+    tbody
+    tr
+    .product-thumbnail {
+    display: none;
+  }
+  .cart
+    .container
+    .row
+    .checkout
+    .table-responsive-lg
+    .table3
+    tbody
+    tr
+    td
+    button {
+    width: 10rem;
+    height: 2rem;
+    border: 1px solid #684f40;
+  }
+  .cart
+    .container
+    .row
+    .checkout
+    .table-responsive-lg
+    .table3
+    tbody
+    tr
+    td
+    button
+    a {
+    color: #684f40;
+    text-align: end;
+    font-size: 0.7rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  .cart .container .row .banner_cart h3::after{
+    content:" ";
+      width: 4rem;
+  }
+}

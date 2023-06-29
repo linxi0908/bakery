@@ -1,0 +1,194 @@
+.contact {
+    width: 100%;
+  }
+  table > :not(caption) > * > * {
+    border-bottom-width: 0px !important;
+  }
+  .contact .container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contact .container .row {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .contact .container .row .col {
+    margin: 1rem 1rem;
+  }
+  .contact .container .row .banner_shop {
+    position: relative;
+  }
+  .contact .container .row .banner_shop img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    height: 250px;
+  }
+  .contact .container .row .banner_shop h3 {
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: 900;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+  }
+  .contact .container .row .banner_shop h3::after {
+    content:" ";
+  background: #fdb822;
+    font-weight: 900;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    height: 0.2rem;
+    width:11rem;
+    z-index: 5;
+  }
+  .contact .container .contact-list {
+    width: 85%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  .contact .container .contact-list .card{
+    --bs-card-border-width: none ;
+    --bs-card-cap-bg: #fff ;
+    --bs-card-border-color: none;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .contact .container .contact-list .card .card-header{
+    font-size: 2.2rem;
+    color: #fff;
+    background: #fdb925;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+  }
+  .contact .container .contact-list .card .card-header:hover{
+    background: #684f40;
+  }
+  .contact .container .contact-list .card .card-title{
+    font-size: 0.9rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #684f40 ;
+    font-family: "Montserrat";
+    padding-bottom: 0.5rem;
+  }
+  .contact .container .contact-list .card .card-text{
+    font-size: 0.8rem;
+    color: #696969 ;
+    font-family: "Open sans";
+    line-height:0.5rem;
+  }
+  .contact .container .row .message h5{
+    color: #684f40;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .contact .container .row .message .line {
+    width: 20%;
+    background: #dddddd;
+    height: 2px;
+    margin: 0 auto;
+  }
+  .contact .container .row .message .line .line1 {
+    width: 35%;
+    background: #fdb822;
+    height: 2px;
+    margin: 0 auto;
+  }
+  .contact .container .send-message form{
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact .container .send-message form input{
+    width: 80%;
+    margin: 1rem 2rem;
+    padding: 0.5rem;
+    background: #fcfcfc;
+    border: 1px solid #e1e1e1;
+    color: #696969;
+    font-family: inherit;
+  }
+  .contact .container .send-message form textarea{
+    width: 80%;
+    color: #696969;
+    padding: 0.5rem;
+    margin: 1rem 2rem;
+    background: #fcfcfc;
+    border: 1px solid #e1e1e1;
+    font-family: inherit;
+    height: 8rem;
+  }
+  .contact .container .send-message form button{
+    width: 10rem;
+    height: 3rem;
+    color: #fff;
+    border: 2px solid  #fdb822;
+    background: #fdb925;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .contact .container .send-message form button:hover{
+    color: #fdb925;
+    border: 2px solid  #fdb822;
+    background: #fff;
+  }
+    @media screen and (min-width: 320px) and (max-width: 2500px) {
+    .container,
+    .container .row,
+    .container .row .banner_shop,
+    .container-lg,
+    .container-xs,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      max-width: 100% !important;
+      padding: 0;
+    }
+  }
+  @media only screen and (min-width: 320px) and (max-width: 557px) {
+    .contact .container .row .banner_shop img {
+      height: 120px;
+    }
+    .contact .container .row .banner_shop h3 {
+      font-size: 1rem;
+    }
+    .contact .container .row .banner_shop h3::after {
+      content:" ";
+      width:7rem;
+    }
+  }
+  @media only screen and (min-width: 558px) and (max-width: 768px) {
+    .contact .container .row .banner_shop img {
+      height: 150px;
+    }
+    .contact .container .row .banner_shop h3 {
+      font-size: 1.2rem;
+    }
+    .contact .container .row .banner_shop h3::after {
+      content:" ";
+      width:8rem;
+    }
+  }
+  

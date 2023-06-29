@@ -1,0 +1,136 @@
+.error404 {
+    width: 100%;
+  }
+  table > :not(caption) > * > * {
+    border-bottom-width: 0px !important;
+  }
+  .error404 .container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .error404 .container .row {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .error404 .container .row .col {
+    margin: 1rem 1rem;
+  }
+  .error404 .container .row .banner_shop {
+    position: relative;
+  }
+  .error404 .container .row .banner_shop img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    height: 250px;
+  }
+  .error404 .container .row .banner_shop h3 {
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: 900;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+  }
+  .error404 .container .row .banner_shop h3::after {
+    content:" ";
+    background: #fdb822;
+      font-weight: 900;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      height: 0.2rem;
+      width:15rem;
+      z-index: 5;
+  }
+  .error404 .container .content {
+    padding: 6rem 1rem;
+  }
+  .error404 .container .content h1 {
+    color: #fdb822;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 6rem;
+  }
+  .error404 .container .content h4 {
+    color: #684f40;
+    font-family: "Montserrat";
+    font-weight: 900;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: normal;
+    padding-bottom: 0.5rem;
+  }
+  .error404 .container .content p {
+    color: #696969;
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  .error404 .container .content button {
+    color: #684f40;
+    background: #f0f0f0;
+    border:2px solid #684f40;
+    font-family: "Montserrat";
+    width: 13rem;
+    text-align: center;
+    padding: 0.5rem 0;
+    color: #684f40;
+    font-size: 0.9rem;
+    font-weight: bold;
+   
+    text-align: center;
+  }
+  .error404 .container .content button:hover {
+    background-color: #684f40;
+    color: #f0f0f0;
+  }
+  @media screen and (min-width: 320px) and (max-width: 2500px) {
+    .container,
+    .container .row,
+    .container .row .banner_cart,
+    .container-lg,
+    .container-xs,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      max-width: 100% !important;
+      padding: 0;
+    }
+  }
+  @media only screen and (min-width: 320px) and (max-width: 557px) {
+    .error404 .container .row .banner_shop img {
+      height: 120px;
+    }
+    .error404 .container .row .banner_shop h3 {
+      font-size: 1rem;
+    }
+    .error404 .container .row .banner_shop h3::after {
+      content:" ";
+        width:10rem;
+    }
+  }
+  @media only screen and (min-width: 558px) and (max-width: 768px) {
+    .error404 .container .row .banner_shop img {
+      height: 150px;
+    }
+    .error404 .container .row .banner_shop h3 {
+      font-size: 1.2rem;
+    }
+    .error404 .container .row .banner_shop h3::after {
+      content:" ";
+        width:11.5rem;
+    }
+  }

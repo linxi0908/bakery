@@ -1,0 +1,448 @@
+.checkout {
+  width: 100%;
+}
+table > :not(caption) > * > * {
+  border-bottom-width: 0px !important;
+}
+.checkout .container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.checkout .container .row {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.checkout .container .row .col {
+  margin: 1rem 1rem;
+}
+.checkout .container .row .banner_shop {
+  position: relative;
+}
+.checkout .container .row .banner_shop img {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  height: 250px;
+}
+.checkout .container .row .banner_shop h3 {
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 900;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+.checkout .container .row .banner_shop h3::after {
+  content:" ";
+  background: #fdb822;
+    font-weight: 900;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    height: 0.2rem;
+    width:10rem;
+    z-index: 5;
+}
+.checkout .container .row .bill {
+  margin: 1rem;
+  width: 60%;
+  margin: 1rem auto;
+}
+.checkout .container .row .bill .table tbody tr th {
+  border: none;
+  text-align: start;
+  width: 30%;
+  font-weight: normal;
+  vertical-align: middle;
+  font-size: 1rem;
+}
+.checkout .container .row .bill .table tbody tr td {
+  border: none;
+  text-align: center;
+  width: 60%;
+}
+.checkout .container .row .bill .table tbody tr td input {
+  width: 90%;
+  font-size: 1rem;
+  border: 1px solid #e1e1e1;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+.checkout .container .row .bill .table tbody tr td form {
+  width: 90%;
+  margin: 0 auto;
+}
+.checkout .container .row .bill .table tbody tr td textarea {
+  width: 90%;
+  font-size: 1rem;
+  border: 1px solid #e1e1e1;
+  padding: 0.7rem;
+  border-radius: 5px;
+  height: 8rem;
+}
+.checkout .container .row .bill h5 {
+  color: #684f40;
+  text-transform: uppercase;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.checkout .container .row .bill .line {
+  width: 100%;
+  background: #dddddd;
+  height: 2px;
+}
+.checkout .container .row .bill .line .line1 {
+  width: 10%;
+  background: #fdb822;
+  height: 2px;
+}
+.checkout .container .row .bill .col .name p {
+  font-size: 1rem;
+}
+.checkout .container .row .bill .col .phone-num p {
+  font-size: 1rem;
+}
+.checkout .container .row .bill .col .email p {
+  font-size: 1rem;
+}
+.checkout .container .row .bill .col .address p {
+  font-size: 1rem;
+}
+.checkout .container .row .order {
+  margin: 1rem;
+  width: 60%;
+  margin: 0 auto;
+}
+.checkout .container .row .order h5 {
+  color: #684f40;
+  text-transform: uppercase;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.checkout .container .row .order .line {
+  width: 100%;
+  background: #dddddd;
+  height: 2px;
+}
+.checkout .container .row .order .line .line1 {
+  width: 10%;
+  background: #fdb822;
+  height: 2px;
+}
+.checkout .container .row .order .table-responsive-lg .table {
+  border: 1px solid #f1f1f1;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.checkout .container .row .order .table-responsive-lg .table thead {
+  text-align: left;
+  background: #f9f9f9;
+}
+.checkout .container .row .order .table-responsive-lg .table thead tr th {
+  border: 1px solid #f1f1f1;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.checkout .container .row .order .table-responsive-lg .table tbody tr td {
+  border: none !important;
+  border-right: 1px solid #f1f1f1 !important;
+  text-transform: capitalize;
+  color: #696969;
+  font-size: 1rem;
+}
+.checkout .container .row .cart-total {
+  margin: 1rem;
+  width: 60%;
+  margin: 0 auto;
+}
+.checkout .container .row .cart-total .table-responsive-lg .table2 {
+  border: 1px solid #f1f1f1;
+}
+.checkout .container .row .cart-total .table-responsive-lg .table tbody {
+  border: 1px solid #f1f1f1;
+  text-transform: uppercase;
+  text-align: left;
+  color: #fdb822;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.checkout .container .row .cart-total .table-responsive-lg .table tbody tr th {
+  border: 1px solid #f1f1f1;
+  text-transform: uppercase;
+}
+.checkout .container .row .place-order {
+  margin: 1rem;
+  width: 60%;
+  margin: 0 auto;
+}
+.checkout .container .row .place-order .table-responsive-lg .table3 {
+  margin-bottom: 0;
+}
+.checkout
+  .container
+  .row
+  .place-order
+  .table-responsive-lg
+  .table3
+  tbody
+  tr
+  button {
+    width: 8rem;
+    height: 2rem;
+  border: 2px solid #684f40;
+  color: #684f40;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  background: #f0f0f0;
+}
+.checkout
+  .container
+  .row
+  .place-order
+  .table-responsive-lg
+  .table3
+  tbody
+  tr
+  button
+  a {
+  color: #684f40;
+  text-align: end;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+.checkout
+  .container
+  .row
+  .place-order
+  .table-responsive-lg
+  .table3
+  tbody
+  tr
+  button:hover
+  a {
+  color: #fdb925;
+}
+
+.checkout
+  .container
+  .row
+  .place-order
+  .table-responsive-lg
+  .table3
+  tbody
+  tr
+  button:hover {
+  background: #684f40;
+  color: #fdb925;
+}
+@media screen and (min-width: 320px) and (max-width: 2500px) {
+  .container,
+  .container .row,
+  .container .row .banner_cart,
+  .container-lg,
+  .container-xs,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 100% !important;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 557px) {
+  .checkout .container .row .banner_shop img {
+    height: 120px;
+  }
+  .checkout .container .row .banner_shop h3 {
+    font-size: 1rem;
+  }
+  .checkout .container .row .bill {
+    margin: 1rem;
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .checkout .container .row .bill .table tbody tr {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .checkout .container .row .bill .table tbody tr th {
+    font-size: 0.8rem;
+    width: 100% !important;
+  }
+  .checkout .container .row .bill .table tbody tr td {
+    width: 100% !important;
+  }
+  .checkout .container .row .bill .table tbody tr td input {
+    font-size: 0.8rem;
+  }
+  .checkout .container .row .bill .table tbody tr td form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .checkout .container .row .bill .table tbody tr td textarea {
+    font-size: 0.8rem;
+  }
+  .checkout .container .row .bill h5 {
+    font-size: 0.9rem;
+  }
+  .checkout .container .row .order {
+    margin: 1rem;
+    width: 90%;
+    margin: 1rem auto;
+    margin-bottom: 0;
+  }
+  .checkout .container .row .order h5 {
+    font-size: 0.9rem;
+  }
+  .checkout .container .row .order .table-responsive-lg .table thead tr th {
+    font-size: 0.9rem;
+  }
+  .checkout .container .row .order .table-responsive-lg .table tbody tr td {
+    font-size: 0.9rem;
+  }
+  .checkout .container .row .cart-total {
+    margin: 1rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .checkout .container .row .cart-total .table-responsive-lg .table tbody {
+    font-size: 0.9rem;
+  }
+  .checkout .container .row .place-order {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0;
+    overflow-x: none;
+  }
+  .checkout .container .row .place-order .table-responsive-lg .table3 tbody tr {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .checkout
+    .container
+    .row
+    .place-order
+    .table-responsive-lg
+    .table3
+    tbody
+    tr
+    button {
+    width: 8rem;
+    height: 2rem;
+    border: 2px solid #684f40;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  .checkout
+    .container
+    .row
+    .place-order
+    .table-responsive-lg
+    .table3
+    tbody
+    tr
+    button
+    a {
+    color: #684f40;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  .checkout .container .row .banner_shop h3::after {
+    content:" ";
+      width:6rem;
+  }
+}
+@media only screen and (min-width: 558px) and (max-width: 768px) {
+  .checkout .container .row .banner_shop img {
+    height: 150px;
+  }
+  .checkout .container .row .banner_shop h3 {
+    font-size: 1.2rem;
+  }
+  .checkout .container .row .bill {
+    margin: 1rem;
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .checkout .container .row .order {
+    margin: 1rem;
+    width: 90%;
+    margin: 1rem auto;
+    margin-bottom: 0;
+  }
+  .checkout .container .row .cart-total {
+    margin: 1rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .checkout .container .row .place-order {
+    margin: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0;
+  }
+
+  .checkout
+    .container
+    .row
+    .place-order
+    .table-responsive-lg
+    .table3
+    tbody
+    tr
+    button {
+    width: 8rem;
+    height: 2rem;
+    border: 2px solid #684f40;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  .checkout
+    .container
+    .row
+    .place-order
+    .table-responsive-lg
+    .table3
+    tbody
+    tr
+    button
+    a {
+    color: #684f40;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  .checkout .container .row .banner_shop h3::after {
+    content:" ";
+      width:8rem;
+  }
+}
