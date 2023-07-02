@@ -1,17 +1,16 @@
 // /* eslint-disable jsx-a11y/alt-text */
 import Carousel from "react-bootstrap/Carousel";
-import "animate.css";
 import { Link } from "react-router-dom";
-import banner_1 from "../home/imgs/banner_1.jpeg";
-import banner_2 from "../home/imgs/banner_2.jpeg";
-import banner_3 from "../home/imgs/banner_3.jpeg";
+import banner_1 from "../home/imgs/banner_1.jpg";
+import banner_2 from "../home/imgs/banner_2.jpg";
+import banner_3 from "../home/imgs/banner_3.jpg";
 import { Container, Col, Row, Card } from "react-bootstrap";
 import "../home/Home.css";
 import { GoGift } from "react-icons/go";
 import { FaMartiniGlassCitrus } from "react-icons/fa6";
 import {
   AiOutlineSearch,
-  AiOutlineDisconnect,
+  AiOutlineEye,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
 import {
@@ -30,7 +29,7 @@ export default function Home() {
   const {
     index,
     handleSelect,
-    products,
+    product,
     popularList,
     handleAddToCart,
     setQuantity,
@@ -52,7 +51,7 @@ export default function Home() {
             <p></p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>m 
+        <Carousel.Item>
           <img className="d-block w-100" src={banner_3} alt="Third slide" />
 
           <Carousel.Caption>
@@ -224,21 +223,19 @@ export default function Home() {
           </div>
         </Row>
         <Row xs={1} sm={2} md={3} lg={4}>
-          {products &&
-            popularList(products).map((item) => {
+          {product &&
+            popularList(product).map((item) => {
               return (
                 <Col
                   key={item.id}
                   item={item}
                   data-aos="zoom-in"
-                  data-aos-anchor-placement="top-center"
                 >
                   <div className="product_list">
                     <Card>
                       <Card.Img variant="top" src={item.img} />
                       <Card.Body>
                         <Card.Title>{item.product_name}</Card.Title>
-                        <Card.Text>{item.category}</Card.Text>
                         <Card.Text className="price">
                           $ {item.price.toFixed(2)}
                         </Card.Text>
@@ -263,7 +260,7 @@ export default function Home() {
                               style={{ textDecoration: "none" }}
                             >
                               <span>
-                                <AiOutlineDisconnect />
+                                <AiOutlineEye />
                               </span>
                             </Link>
                           </button>

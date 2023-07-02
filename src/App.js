@@ -17,6 +17,7 @@ import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import ScrollToTop from "./components/scrolltotop/ScrollToTop";
 import Error404 from "./components/error404/Error404";
+import MuffinProduct from "./components/products/MuffinProduct";
 function App() {
   return (
     <div >
@@ -27,11 +28,12 @@ function App() {
     <Route path="/" element={<Home/>}></Route>
     <Route path="/about" element={<About/>}></Route>
     <Route path="/contact" element={<Contact/>}></Route>
-    <Route path="/product" element={<Product/>}></Route>
+    <Route exact path="/product" element={<Product/>}></Route>
     <Route path="/product/bread" element={<BreadProduct/>}></Route>
     <Route path="/product/cake" element={<CakeProduct/>}></Route>
     <Route path="/product/cookie" element={<CookieProduct/>}></Route>
     <Route path="/product/pastry" element={<PastryProduct/>}></Route>
+    <Route path="/product/muffin" element={<MuffinProduct/>}></Route>
     <Route path="/product/cart" element={<Cart/>}></Route>
     <Route path="/product/checkout" element={<Checkout/>}></Route>
     <Route path="/product/order" element={<Order/>}></Route>

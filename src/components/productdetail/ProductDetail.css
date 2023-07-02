@@ -10,16 +10,6 @@
   width: 100%;
   margin: 0rem auto;
 }
-.product_detail .container .detail {
-  width: 85%;
-  margin: 2rem auto;
-  display: flex;
-}
-.product_detail .container .row .col {
-  margin: 0.5rem;
-  display: flex;
-  padding: 1rem;
-}
 .product_detail .container .row .banner_shop {
   position: relative;
 }
@@ -52,6 +42,21 @@
     height: 0.2rem;
     width:6rem;
     z-index: 5;
+}
+.product_detail .container .detail {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+}
+.product_detail .container .row .col {
+  margin: 0.5rem;
+  display: flex;
+  padding: 1rem;
+}
+
+.product_detail .container .detail .col .img_product {
+  display: flex;
+  justify-content: center;
 }
 .product_detail .container .detail .col .img_product img {
   max-width: 100%;
@@ -173,7 +178,7 @@
   color: #fff;
 }
 .product_detail .container .tab {
-  width: 85%;
+  width: 80%;
   margin: 2rem auto;
   border-top: none;
 }
@@ -294,6 +299,97 @@
   font-size: 0.95rem;
   margin: 1rem 0;
 }
+.product_detail .container .list {
+  width: 80%;
+  margin: 2rem auto;
+  text-align: center;
+}
+.product_detail .container .row .col .product_list {
+  position: relative;
+}
+.product_detail .container .row .col .product_list .card {
+  margin: 0 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: none;
+}
+.product_detail .container .row .col .product_list .card .card-body {
+  padding: 0;
+}
+.product_detail .container .row .col .product_list .card .card-body .card-title {
+  color: #684f40;
+  font-size: 0.9rem;
+  padding-top: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.product_detail .container .row .col .product_list .card .card-body .card-text {
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+}
+.product_detail .container .row .col .product_list .card .card-body .price {
+  color: #fdb925;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+.product_detail .container .row .col .product_list .card .shopping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  display: none;
+  background: #ffffff94;
+  height: 70%;
+  
+}
+.product_detail .container .row .col .product_list:hover .card .shopping {
+  display: block;
+  display: flex;
+  transition: 1s;
+}
+.product_detail .container .row .col .product_list:hover .img_product {
+  background: #cccbcbb0;
+}
+.product_detail .container .row .col .product_list .shopping .icon {
+  text-align: center;
+  margin: 0 0.3rem;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  text-align: center;
+}
+.product_detail .container .row .col .product_list .shopping .icon button {
+  color: #fff;
+  text-align: center;
+  background: #fdb925;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  border: none;
+}
+.product_detail .container .row .col .product_list .shopping .icon button a {
+  color: #fff;
+}
+.product_detail .container .row .col .product_list .shopping .icon button svg {
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 15%;
+}
+.product_detail .container .row .col .product_list .shopping .icon .btn svg {
+  font-size: 1.4rem;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 14%;
+}
+.product_detail .container .row .col .product_list .shopping .icon button:hover {
+  background: #684f40;
+}
+#popup-root .popup-overlay .popup-content img{
+  width: 20em;
+}
 @media screen and (min-width: 320px) and (max-width: 2500px) {
   .container,
   .container .row,
@@ -349,6 +445,10 @@
   }
 }
 @media screen and (min-width: 558px) and (max-width: 768px) {
+  .product_detail .container .detail {
+    display: flex;
+    flex-direction: column;
+  }
   .product_detail .container .row .banner_shop img {
     height: 120px;
   }

@@ -1,21 +1,25 @@
-import bread_1 from "../src/components/products/imgs/Bread/bread_1.jpg";
-import bread_2 from "../src/components/products/imgs/Bread/bread_2.jpg";
-import bread_3 from "../src/components/products/imgs/Bread/bread_3.jpg";
-import bread_4 from "../src/components/products/imgs/Bread/bread_4.jpg";
-import bread_5 from "../src/components/products/imgs/Bread/bread_5.jpg";
-import bread_6 from "../src/components/products/imgs/Bread/bread_6.jpg";
-import bread_7 from "../src/components/products/imgs/Bread/bread_7.jpg";
-import cake_1 from "../src/components/products/imgs/Cake/cake_1.jpg";
-import cake_2 from "../src/components/products/imgs/Cake/cake_2.jpg";
-import cake_3 from "../src/components/products/imgs/Cake/cake_3.jpg";
-import cake_4 from "../src/components/products/imgs/Cake/cake_4.jpg";
-import cookie_1 from "../src/components/products/imgs/Cookie/cookie_1.jpg";
-import cookie_2 from "../src/components/products/imgs/Cookie/cookie_2.jpg";
-import cookie_3 from "../src/components/products/imgs/Cookie/cookie_3.jpg";
-import cookie_4 from "../src/components/products/imgs/Cookie/cookie_4.jpg";
-import pastry_1 from "../src/components/products/imgs/Pastry/pastry_1.jpg";
-import pastry_2 from "../src/components/products/imgs/Pastry/pastry_2.jpg";
-import pastry_3 from "../src/components/products/imgs/Pastry/pastry_3.jpg";
+import bread_1 from "./components/products/imgs/Bread/bread_1.jpg";
+import bread_2 from "./components/products/imgs/Bread/bread_2.jpg";
+import bread_3 from "./components/products/imgs/Bread/bread_3.jpg";
+import bread_4 from "./components/products/imgs/Bread/bread_4.jpg";
+import bread_5 from "./components/products/imgs/Bread/bread_5.jpg";
+import bread_6 from "./components/products/imgs/Bread/bread_6.jpg";
+import bread_7 from "./components/products/imgs/Bread/bread_7.jpg";
+import cake_1 from "./components/products/imgs/Cake/cake_1.jpg";
+import cake_2 from "./components/products/imgs/Cake/cake_2.jpg";
+import cake_3 from "./components/products/imgs/Cake/cake_3.jpg";
+import cake_4 from "./components/products/imgs/Cake/cake_4.jpg";
+import cookie_1 from "./components/products/imgs/Cookie/cookie_1.jpg";
+import cookie_2 from "./components/products/imgs/Cookie/cookie_2.jpg";
+import cookie_3 from "./components/products/imgs/Cookie/cookie_3.jpg";
+import cookie_4 from "./components/products/imgs/Cookie/cookie_4.jpg";
+import pastry_1 from "./components/products/imgs/Pastry/pastry_1.jpg";
+import pastry_2 from "./components/products/imgs/Pastry/pastry_2.jpg";
+import pastry_3 from "./components/products/imgs/Pastry/pastry_3.jpg";
+import muffin_1 from "./components/products/imgs/Muffin/muffin_1.jpg"
+import muffin_2 from "./components/products/imgs/Muffin/muffin_2.jpg"
+import muffin_3 from "./components/products/imgs/Muffin/muffin_3.jpg"
+import muffin_4 from "./components/products/imgs/Muffin/muffin_4.jpg"
 export const products = [
     {
       id: "1",
@@ -27,6 +31,7 @@ export const products = [
       description:
         "Channeling the old-world techniques of our Grandma Grace and her unwavering ability to produce hand-crafted cookies consistently both delicious and ornate, her much beloved amaretti cookie recipe will take you to straight into the doors of the authentic bakeries of Lipari, Italy and their intoxicating aromas. Created carefully with the same love, attention and high-quality, real ingredients we know our nonna would only approve of, our fresh amaretto cookie dough is hand-dipped with care in crystallized sugar and adorned with a whole almond just before it’s placed into our oven to gently bake to perfection. The final result is a rich, bold, dense cookie adored by the whole famiglia.",
       img: [cookie_1],
+      popular:false
     },
     {
       id: "2",
@@ -38,6 +43,7 @@ export const products = [
       description:
         "Flourless chocolate with cherry filling, decorated with whipped cream and chocolate shavings.",
       img: [cake_1],
+      popular:true
     },
     {
       id: "3",
@@ -48,6 +54,7 @@ export const products = [
       dimensions: "4 x 2 x 1 in",
       description: " ",
       img: [pastry_1],
+      popular:true
     },
     {
       id: "4",
@@ -59,6 +66,7 @@ export const products = [
       description:
         "Creamy style Cappuccino cheesecake, with chocolate nibs on the outside.",
       img: [cake_2],
+      popular:false
     },
     {
       id: "5",
@@ -69,6 +77,7 @@ export const products = [
       dimensions: "2 x 1 x 1 in",
       description: " ",
       img: [cake_3],
+      popular:false
     },
     {
       id: "6",
@@ -79,6 +88,7 @@ export const products = [
       dimensions: "4 x 2 x 1 in",
       description: " ",
       img: [cookie_2],
+      popular:false
     },
     {
       id: "7",
@@ -90,6 +100,7 @@ export const products = [
       description:
         "This dense loaf comes in rounds and loaves and has been a huge hit in German and Russian communities. Thinly sliced and served with a sliver of ham or a robust cheese, it is the perfect accompaniment to a tall, cold glass of dark beer.",
       img: [bread_1],
+      popular:false
     },
     {
       id: "8",
@@ -100,6 +111,7 @@ export const products = [
       dimensions: "4 x 2 x 1 in",
       description: " ",
       img: [pastry_2],
+      popular:true
     },
     {
       id: "9",
@@ -110,6 +122,7 @@ export const products = [
       dimensions: "4 x 2 x 1 in",
       description: " ",
       img: [pastry_3],
+      popular:true
     },
     {
       id: "10",
@@ -121,6 +134,7 @@ export const products = [
       description:
         "Cracker bread made with semolina flour and fresh rosemary, brushed with olive oil and sprinkled with sea salt. Break it apart and dip it in our fabulous spreads!",
       img: [bread_2],
+      popular:false
     },
     {
       id: "11",
@@ -132,6 +146,7 @@ export const products = [
       description:
         "Mocha cake, traditional brown sugar, coconut and pecan filling, glazed with ganache.",
       img: [cake_4],
+      popular:false
     },
     {
       id: "12",
@@ -143,6 +158,7 @@ export const products = [
       description:
         "Same bread, different shapes, they are both lighter and crustier than our other French-style breads. The Francese stick is a good table bread, and is the best bread to use for crostini or bruschetta. The Italiano is a 1/2 pound loaf that’s best cut in chunks and served with butter or a good olive oil.",
       img: [bread_3],
+      popular:false
     },
     {
       id: "13",
@@ -153,10 +169,58 @@ export const products = [
       dimensions: "4 x 2 x 1 in",
       description: " ",
       img: [cookie_3],
+      popular:false
     },
-
     {
       id: "14",
+      product_name: "Maple oat muffin",
+      price: 8.95,
+      category: "Muffins",
+      weight: "5.0 lbs",
+      dimensions: "4 x 2 x 1 in",
+      description:
+        "",
+      img: [muffin_4],
+      popular:true
+    },
+    {
+      id: "15",
+      product_name: "Marble crunch muffin",
+      price: 6.45,
+      category: "Muffins",
+      weight: "5.0 lbs",
+      dimensions: "4 x 2 x 1 in",
+      description:
+        "",
+      img: [muffin_3],
+      popular:true
+    },
+    {
+      id: "16",
+      product_name: "Pumpkin yogurt muffin",
+      price: 4.25,
+      category: "Muffins",
+      weight: "5.0 lbs",
+      dimensions: "4 x 2 x 1 in",
+      description:
+        "",
+      img: [muffin_1],
+      popular:true
+    },
+    {
+      id: "17",
+      product_name: "Raisin bran muffin",
+      price: 5.95,
+      category: "Muffins",
+      weight: "5.0 lbs",
+      dimensions: "4 x 2 x 1 in",
+      description:
+        "",
+      img: [muffin_2],
+      popular:true
+    },
+    {
+      id: "18",
       product_name: "Round bread",
       price: 6.9,
       category: "Breads",
@@ -165,9 +229,10 @@ export const products = [
       description:
         "Our award winning muesli bread made with rolled oats, walnuts, mixed seeds & mixed fruits.",
       img: [bread_4],
+      popular:false
     },
     {
-      id: "15",
+      id: "19",
       product_name: "Rye bread",
       price: 6.25,
       category: "Breads",
@@ -176,9 +241,10 @@ export const products = [
       description:
         "This dense loaf comes in rounds and loaves and has been a huge hit in German and Russian communities. Thinly sliced and served with a sliver of ham or a robust cheese, it is the perfect accompaniment to a tall, cold glass of dark beer.",
       img: [bread_5],
+      popular:false
     },
     {
-      id: "16",
+      id: "20",
       product_name: "Sourdough",
       price: 5.0,
       category: "Breads",
@@ -187,9 +253,10 @@ export const products = [
       description:
         "Crispy crust and moist interior, with a robust and distinctive sourdough flavor. Our light sourdough with dried, unsulphured Turkish apricots, roasted walnuts and pecans. Slightly sweet.",
       img: [bread_6],
+      popular:false
     },
     {
-      id: "17",
+      id: "21",
       product_name: "Sprinkle cookies",
       price: 14.95,
       category: "Cookies",
@@ -197,10 +264,10 @@ export const products = [
       dimensions: "4 x 2 x 1 in",
       description: " ",
       img: [cookie_4],
+      popular:false
     },
-
     {
-      id: "18",
+      id: "22",
       product_name: "Whole wheat bread",
       price: 5.0,
       category: "Breads",
@@ -209,5 +276,7 @@ export const products = [
       description:
         "66% whole wheat, 33% King Arthur never bleached, never bromated flour, with a touch of honey to balance the flavor.",
       img: [bread_7],
+      popular:false
     },
 ];
+export default products;

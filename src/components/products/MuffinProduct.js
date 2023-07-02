@@ -12,8 +12,8 @@ import {
   AiOutlineShoppingCart,
 } from "react-icons/ai";
 import "../products/CookieProduct.css";
-export default function CookieProduct() {
-  const { product, cookieList, addCart } = useContext(AppContext);
+export default function MuffinProduct() {
+  const {  muffinList, addCart } = useContext(AppContext);
   return (
     <div className="product">
       <Container>
@@ -24,7 +24,7 @@ export default function CookieProduct() {
           </div>
         </Row>
         <Row xs={1} sm={2} md={3} lg={4} className="list">
-          {cookieList.map((item) => {
+          {muffinList.map((item) => {
               return (
                 <Col key={item.id} item={item}>
                   <div className="product_list" data-aos="zoom-in">

@@ -54,14 +54,17 @@
     width: 5rem;
     z-index: 5;
 }
-.cart .container .row .table-responsive-lg .table {
+.cart .container .row .table-responsive-lg .table1{
+  min-height: 20vh;
+}
+.cart .container .row .table-responsive-lg .table1 {
   width: 70%;
   border: 1px solid #dddddd;
   padding-top: 1rem;
   margin: 0rem auto;
   margin-top: 2rem;
 }
-.cart .container .row .table-responsive-lg .table thead tr th {
+.cart .container .row .table-responsive-lg .table1 thead tr th {
   background: #f9f9f9;
   color: #343434;
   height: 3rem;
@@ -69,19 +72,19 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   vertical-align: middle;
 }
-.cart .container .row .table-responsive-lg .table tbody tr td {
+.cart .container .row .table-responsive-lg .table1 tbody tr td {
   vertical-align: middle;
   font-size: 0.8rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.cart .container .row .table-responsive-lg .table tbody tr th {
+.cart .container .row .table-responsive-lg .table1 tbody tr th {
   display: none;
 }
 .cart
   .container
   .row
   .table-responsive-lg
-  .table
+  .table1
   tbody
   tr
   .product-remove
@@ -100,7 +103,7 @@
   .container
   .row
   .table-responsive-lg
-  .table
+  .table1
   tbody
   tr
   .product-remove
@@ -108,7 +111,7 @@
   color: #fff;
   background: red;
 }
-.cart .container .row .table-responsive-lg .table tbody tr .product-name a {
+.cart .container .row .table-responsive-lg .table1 tbody tr .product-name a {
   color: #fdb925;
   text-transform: capitalize;
 }
@@ -116,7 +119,7 @@
   .container
   .row
   .table-responsive-lg
-  .table
+  .table1
   tbody
   tr
   .product-quantity
@@ -128,7 +131,7 @@
   .container
   .row
   .table-responsive-lg
-  .table
+  .table1
   tbody
   tr
   .product-quantity
@@ -145,7 +148,7 @@
   .container
   .row
   .table-responsive-lg
-  .table
+  .table1
   tbody
   tr
   .product-quantity
@@ -161,7 +164,7 @@
   .container
   .row
   .table-responsive-lg
-  .table
+  .table1
   tbody
   tr
   .product-quantity
@@ -173,7 +176,7 @@
   .container
   .row
   .table-responsive-lg
-  .table
+  .table1
   tbody
   tr
   .product-quantity
@@ -186,7 +189,7 @@
   .container
   .row
   .table-responsive-lg
-  .table
+  .table1
   tbody
   tr
   .product-quantity
@@ -216,14 +219,16 @@ input::-webkit-inner-spin-button {
   color: #684f40;
   font-size: 0.9rem;
   text-align: left;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-weight: bold;
   width: 100%;
   margin: 0 auto;
   border-top:none;
+  border:1px solid #dddddd
 }
 .cart .container .row .cart-total .table-responsive-lg .table2 tbody tr th {
   display: block;
+  
 }
 .cart .container .row .cart-total .table-responsive-lg .table2 tbody tr td {
   text-align: end;
@@ -244,6 +249,8 @@ input::-webkit-inner-spin-button {
 .cart .container .row .checkout {
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 .cart .container .row .checkout .table-responsive-lg .table3 {
   margin: 0 auto;
@@ -276,6 +283,7 @@ input::-webkit-inner-spin-button {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   background: #f0f0f0;
+  margin:1rem 0rem;
 }
 .cart
   .container
@@ -336,6 +344,7 @@ input::-webkit-inner-spin-button {
   .cart .container .row .cart-total {
     width: 90%;
     margin: 0 auto;
+    
 }
   .cart
     .container
@@ -426,6 +435,18 @@ input::-webkit-inner-spin-button {
   content:" ";
     width: 3rem;
 }
+.cart
+  .container
+  .row
+  .checkout
+  .table-responsive-lg
+  .table3
+  tbody
+  tr
+  td
+  button {
+  margin: 0rem;
+}
 }
 @media only screen and (min-width: 558px) and (max-width: 768px) {
   .cart .container .row .banner_cart img {
@@ -464,7 +485,7 @@ input::-webkit-inner-spin-button {
     tr
     td
     button {
-    width: 10rem;
+    width: 13rem;
     height: 2rem;
     border: 1px solid #684f40;
   }

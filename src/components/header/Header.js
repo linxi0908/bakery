@@ -7,7 +7,7 @@ import { AppContext } from "../../AppContext";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import { IoIosArrowDown } from "react-icons/io";
 export default function Header() {
-  const { toggle, handle_toggle, totalQuantity } = useContext(AppContext);
+  const { toggle, handle_toggle, totalQuantity,handleGoBack } = useContext(AppContext);
   return (
     <div className="header">
       <div className="nav">
@@ -20,11 +20,11 @@ export default function Header() {
             </li>
             <li className="li_dropdown">
               <Link to="/about" style={{ textDecoration: "none" }}>
-                ABOUT
+                ABOUT US
               </Link>
             </li>
             <li className="li_dropdown">
-              <Link to="/product" style={{ textDecoration: "none" }}>
+              <Link to="/product" style={{ textDecoration: "none" }} onClick={handleGoBack}>
                 SHOP
               </Link>
               <ul className="menu2">
@@ -46,6 +46,11 @@ export default function Header() {
                 <li>
                   <Link to="/product/pastry" style={{ textDecoration: "none" }}>
                     Pastries
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/product/muffin" style={{ textDecoration: "none" }}>
+                    Muffins
                   </Link>
                 </li>
               </ul>
@@ -83,7 +88,7 @@ export default function Header() {
               </li>
               <li className="handle_li">
                 <Link to="/about" style={{ textDecoration: "none" }}>
-                  ABOUT
+                  ABOUT US
                 </Link>
               </li>
               <li className="handle_li">
@@ -92,14 +97,9 @@ export default function Header() {
                 </Link>
               </li>
               <li className="handle_li">
-                
-                  <label className="burger" htmlFor="burger">
-              <Link to="/product" style={{ textDecoration: "none" }}>
+              <Link to="/product" style={{ textDecoration: "none" }} onClick={handleGoBack} >
                   SHOP {" "}<span><IoIosArrowDown/></span>
                   </Link>
-              
-            </label>
-            
                 <ul className="menu2">
                   <li>
                     <Link
@@ -130,6 +130,11 @@ export default function Header() {
                       Pastries
                     </Link>
                   </li>
+                  <li>
+                  <Link to="/product/muffin" style={{ textDecoration: "none" }}>
+                    Muffins
+                  </Link>
+                </li>
                 </ul>
               </li>
 

@@ -60,6 +60,7 @@
   .product .container .row .col .product_list .card{
     margin: 0 1rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: none;
   }
   .product .container .row .col .product_list .card .card-body{
     padding: 0;
@@ -108,7 +109,7 @@
   .product .container .row .col .product_list .shopping .icon .btn svg {
     font-size: 1.4rem;
     -webkit-font-smoothing: antialiased;
-    margin-bottom: 15%;
+    margin-bottom: 14%;
   }
   .product .container .row .col .product_list .shopping .icon button:hover {
     background:#684f40;

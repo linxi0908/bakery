@@ -208,7 +208,7 @@
     position: absolute;
   }
 }
-.header .nav .menu .right .handle_ul  .handle_li:hover  .burger a span svg path{
+.header .nav .menu .right .handle_ul  .handle_li:hover a span svg path{
  transform: rotateX(180deg) ;
  -webkit-transform-origin-y:250px ;
  transition: 0.05s;
@@ -339,7 +339,7 @@
   padding: 8px;
   margin-left: 0px;
   color: #684f40;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-weight: bold;
 }
 .header .nav .tabmenu .ul_dropdown .li_dropdown .menu2 li:hover {

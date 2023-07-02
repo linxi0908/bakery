@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
-import { useContext } from "react";
+import { useContext,useEffect } from "react";
+import ReactPaginate from "react-paginate";
 import { AppContext } from "../../AppContext";
 import { Container, Col, Row, Form, Card } from "react-bootstrap";
 import Popup from "reactjs-popup";
@@ -7,22 +8,26 @@ import header_1 from "../../pages/home/imgs/header_1.jpg";
 import { Link } from "react-router-dom";
 import {
   AiOutlineSearch,
-  AiOutlineDisconnect,
+  AiOutlineEye,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
+import { LuArrowRight, LuArrowLeft } from "react-icons/lu";
 import "../products/Product.css";
 export default function Product() {
   const {
-    products,
+    product,
     setCheck,
     filterList,
     handle_sort,
     sort,
     setQuantity,
     handleAddToCart,
-    showViewer,
-    handleCloseViewer,
     handleShowViewer,
+    currentProducts,
+    handlePageClick,
+    productsPerPage,
+    currentPage,
+    setProduct,
   } = useContext(AppContext);
   return (
     <div className="product">
@@ -52,7 +57,7 @@ export default function Product() {
               <p>Filter by: </p>
               <Form.Select
                 aria-label="Default select example"
-                onChange={(e) => setCheck(e.target.value)}
+                onChange={(e) => setCheck(parseInt(e.target.value))}
               >
                 <option value={0}>All products</option>
                 <option value={1}>Popular products </option>
@@ -63,63 +68,75 @@ export default function Product() {
           </div>
         </Row>
         <Row xs={1} sm={2} md={3} lg={4} className="list">
-          {products &&
-            filterList(products).map((item) => {
-              return (
-                <Col key={item.id} item={item}>
-                  <div className="product_list" data-aos="zoom-in">
-                    <Card>
-                      <Card.Img variant="top" src={item.img} />
-                      <Card.Body>
-                        <Card.Title>{item.product_name}</Card.Title>
-                        <Card.Text>{item.category}</Card.Text>
-                        <Card.Text className="price">
-                          $ {item.price.toFixed(2)}
-                        </Card.Text>
-                      </Card.Body>
-                      <div className="shopping">
-                        <div className="icon" onClick={handleShowViewer}>
-                          <Popup
-                            modal
-                            trigger={
-                              <button>
-                                <AiOutlineSearch />
-                              </button>
-                            }
-                          >
-                            <img src={item.img} alt="" />
-                          </Popup>
-                        </div>
-                        <div className="icon">
-                          <button>
-                            <Link
-                              to={`/products/${item.id}`}
-                              style={{ textDecoration: "none" }}
-                            >
-                              <span>
-                                <AiOutlineDisconnect />
-                              </span>
-                            </Link>
-                          </button>
-                        </div>
-                        <div className="icon">
-                          <button
-                            className="btn"
-                            onClick={() => {
-                              handleAddToCart(item.id, 1);
-                              setQuantity(1);
-                            }}
-                          >
-                            <AiOutlineShoppingCart />
-                          </button>
-                        </div>
+          {currentProducts.map((item) => {
+            return (
+              <Col key={item.id} item={item}>
+                <div className="product_list" data-aos="zoom-in">
+                  <Card>
+                    <Card.Img variant="top" src={item.img} />
+                    <Card.Body>
+                      <Card.Title>{item.product_name}</Card.Title>
+                      <Card.Text>{item.category}</Card.Text>
+                      <Card.Text className="price">
+                        $ {item.price.toFixed(2)}
+                      </Card.Text>
+                    </Card.Body>
+                    <div className="shopping">
+                      <div className="icon" onClick={handleShowViewer}>
+                        <Popup
+                          modal
+                          trigger={
+                            <button>
+                              <AiOutlineSearch />
+                            </button>
+                          }
+                        >
+                          <img src={item.img} alt="" />
+                        </Popup>
                       </div>
-                    </Card>
-                  </div>
-                </Col>
-              );
-            })}
+                      <div className="icon">
+                        <button>
+                          <Link
+                            to={`/products/${item.id}`}
+                            style={{ textDecoration: "none" }}
+                          >
+                            <span>
+                              <AiOutlineEye />
+                            </span>
+                          </Link>
+                        </button>
+                      </div>
+                      <div className="icon">
+                        <button
+                          className="btn"
+                          onClick={() => {
+                            handleAddToCart(item.id, 1);
+                            setQuantity(1);
+                          }}
+                        >
+                          <AiOutlineShoppingCart />
+                        </button>
+                      </div>
+                    </div>
+                  </Card>
+                </div>
+              </Col>
+            );
+          })}
         </Row>
+        <ReactPaginate
+          previousLabel={<LuArrowLeft />}
+          nextLabel={<LuArrowRight />}
+          breakLabel={"..."}
+          pageCount={Math.ceil(product.length / productsPerPage)}
+          marginPagesDisplayed={2}
+          pageRangeDisplayed={5}
+          onPageChange={handlePageClick}
+          containerClassName={"pagination"}
+          activeClassName={"active"}
+          forcePage={currentPage}
+          disableInitialCallback={product.length <= productsPerPage}
+        />
       </Container>
     </div>
   );

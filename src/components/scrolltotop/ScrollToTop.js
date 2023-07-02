@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { RiArrowUpDoubleFill } from "react-icons/ri";
 import "./ScrollToTop.css";
 import { useLocation } from "react-router-dom";

@@ -8,12 +8,12 @@ import header_1 from "../../pages/home/imgs/header_1.jpg";
 import { Link } from "react-router-dom";
 import {
   AiOutlineSearch,
-  AiOutlineDisconnect,
+  AiOutlineEye,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
 import "../products/PastryProduct.css";
 export default function PastryProduct() {
-  const { products, pastryList, addCart } = useContext(AppContext);
+  const { product, pastryList, addCart } = useContext(AppContext);
   return (
     <div className="product">
       <Container>
@@ -24,8 +24,7 @@ export default function PastryProduct() {
           </div>
         </Row>
         <Row xs={1} sm={2} md={3} lg={4} className="list">
-          {products &&
-            pastryList(products).map((item) => {
+          {pastryList.map((item) => {
               return (
                 <Col key={item.id} item={item}>
                   <div className="product_list" data-aos="zoom-in">
@@ -60,7 +59,7 @@ export default function PastryProduct() {
                               style={{ textDecoration: "none" }}
                             >
                               <span>
-                                <AiOutlineDisconnect />
+                                <AiOutlineEye />
                               </span>
                             </Link>
                           </button>

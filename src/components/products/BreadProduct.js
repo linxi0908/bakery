@@ -8,12 +8,12 @@ import { Link } from "react-router-dom";
 import swal from "sweetalert";
 import {
   AiOutlineSearch,
-  AiOutlineDisconnect,
+  AiOutlineEye,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
 import "../products/BreadProduct.css";
 export default function BreadProduct() {
-  const { products, breadList, addCart } = useContext(AppContext);
+  const { product, breadList, addCart } = useContext(AppContext);
   return (
     <div className="product">
       <Container>
@@ -24,8 +24,7 @@ export default function BreadProduct() {
           </div>
         </Row>
         <Row xs={1} sm={2} md={3} lg={4} className="list">
-          {products &&
-            breadList(products).map((item) => {
+          {breadList.map((item) => {
               return (
                 <Col key={item.id} item={item}>
                   <div className="product_list" data-aos="zoom-in">
@@ -60,7 +59,7 @@ export default function BreadProduct() {
                               style={{ textDecoration: "none" }}
                             >
                               <span>
-                                <AiOutlineDisconnect />
+                                <AiOutlineEye />
                               </span>
                             </Link>
                           </button>

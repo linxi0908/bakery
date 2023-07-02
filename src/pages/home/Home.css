@@ -114,20 +114,21 @@
 }
 .home .container2 .row{
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto ;
+  padding: 0;
 }
 .home .container2 .row .service h3 {
   font-size: 1.2rem;
   font-family: "Montserrat";
-  margin-top: 2rem;
+  margin-top: 1rem;
   color: #684f40;
   font-weight: bolder;
 }
 .home .container2 .row .service p {
   font-size: 0.95rem;
   font-family: "Open sans";
-  margin-top: 1rem;
   color: #696969;
+  margin-bottom: 0;
 }
 .home .container2 .row .col {
   padding: 0.5rem;
@@ -205,15 +206,17 @@
 .home .container3 .row{
   width: 80%;
   margin: 0 auto;
+  padding:0;
 }
 
 .home .container3 .row .col .product_list {
-
+  padding-bottom: 1rem;
   position: relative;
 }
 .home .container3 .row .col .product_list .card {
   margin: 0 1rem;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: none;
 }
 .home .container3 .row .col .product_list .card .card-body {
   padding: 0;
@@ -221,13 +224,14 @@
 .home .container3 .row .col .product_list .card .card-body .card-title {
   color: #684f40;
   font-size: 0.9rem;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   font-family: "Montserrat";
   font-weight: bold;
   text-transform: uppercase;
 }
 .home .container3 .row .col .product_list .card .card-body .card-text {
   font-size: 0.9rem;
+  padding:1rem 0;
   font-family: "Montserrat";
 }
 .home .container3 .row .col .product_list .card .card-body .price {
@@ -284,7 +288,7 @@
 .home .container3 .row .col .product_list .shopping .icon .btn svg {
   font-size: 1.4rem;
   -webkit-font-smoothing: antialiased;
-  margin-bottom: 15%;
+  margin-bottom: 14%;
 }
 .home .container3 .row .col .product_list .shopping .icon button:hover {
   background: #684f40;
@@ -433,13 +437,13 @@
     font-size: 0.75rem;
   }
   .home .carousel {
-    height: 40vh;
+    height: 25vh;
   }
   .home .carousel .carousel-inner {
-    height: 40vh;
+    height: 25vh;
   }
   .home .carousel .carousel-inner .carousel-item {
-    height: 40vh;
+    height: 25vh;
   }
   .home .container .row .col .content .pragraph h3 {
     font-size: 1rem;
@@ -503,13 +507,13 @@
     font-size: 0.75rem;
   }
   .home .carousel {
-    height: 45vh;
+    height: 35vh;
   }
   .home .carousel .carousel-inner {
-    height: 45vh;
+    height: 35vh;
   }
   .home .carousel .carousel-inner .carousel-item {
-    height: 45vh;
+    height: 35vh;
   }
   .home .carousel .carousel-control-prev span{
     width: 3rem;

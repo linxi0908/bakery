@@ -1,5 +1,5 @@
 import { Container, Row, Table } from "react-bootstrap";
-import { useContext } from "react";
+import { useContext,useEffect } from "react";
 import { AppContext } from "../../AppContext";
 import "../checkout/Checkout.css";
 import header_1 from "../../pages/home/imgs/header_1.jpg";
@@ -11,10 +11,20 @@ export default function Checkout() {
     form,
     list,
     productlist,
-    placeOrder,
-    viewCart
+    // placeOrder,
+    viewCart,
+    placeorder,
+    setPlaceorder
   } = useContext(AppContext);
-
+  useEffect(() => {
+    const cartList = JSON.parse(localStorage.getItem("cart_list"));
+    if (cart.length > 0 || cartList > 0) {
+      setPlaceorder(true)
+    }
+    else {
+      setPlaceorder(false)
+    }
+  })
   return (
     <div className="checkout">
       <Container>
@@ -207,7 +217,10 @@ export default function Checkout() {
                       </button>
                     </td>
                     <td style={{ width: "50%" }}>
-                      {placeOrder}
+                      {/* {placeOrder} */}
+                      {placeorder && 
+                        <button type="submit">PLACE ORDER</button>
+                      }
                     </td>
                   </tr>
                 </tbody>

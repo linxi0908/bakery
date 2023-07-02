@@ -98,6 +98,7 @@
 .product .container .row .col .product_list .card {
   margin: 0 1rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: none;
 }
 .product .container .row .col .product_list .card .card-body {
   padding: 0;
@@ -166,8 +167,77 @@
   -webkit-font-smoothing: antialiased;
   margin-bottom: 15%;
 }
+.product .container .row .col .product_list .shopping .icon .btn svg {
+  font-size: 1.4rem;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 14%;
+}
 .product .container .row .col .product_list .shopping .icon button:hover {
   background: #684f40;
+}
+.product .container .pagination{
+  display: flex;
+  justify-content:center;
+  margin-top: 20px;
+}
+.product .container .pagination > li {
+  margin: 0 10px;
+  cursor: pointer;
+  color: #555;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+.product .container .pagination .previous a {
+  display: block;
+  padding:5px 8px;
+  border-radius: 50%;
+  color: #555;
+  background: #ebebeb;
+}
+.product .container .pagination .previous a svg{
+  padding-bottom: 3px;
+}
+.product .container .pagination .previous a svg{
+  padding-bottom: 3px;
+  font-size: 1.4rem;
+}
+
+.product .container .pagination .next a {
+  display: block;
+  padding:5px 8px;
+  border-radius: 50%;
+  color: #555;
+  background: #ebebeb;
+}
+.product .container .pagination .next a svg{
+  padding-bottom: 3px;
+  font-size: 1.4rem;
+}
+.product .container .pagination > li > a {
+  display: block;
+  padding:4px 12px;
+  border-radius: 50%;
+  color: #555;
+  background: #ebebeb;
+}
+.product .container .pagination > li.active {
+  color: #fff;
+}
+
+.product .container .pagination > li.active > a {
+  background-color: #fff;
+  color: #684f40;
+  border: 1px solid #684f40;
+}
+
+.product .container .pagination > li:hover {
+  color: #684f40;
+}
+
+.product .container .pagination > li:hover > a {
+  background-color: #684f40;
+  color: #FFF;
 }
 #popup-root .popup-overlay {
   background: #3c3c3c88;
