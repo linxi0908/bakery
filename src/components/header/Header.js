@@ -7,7 +7,7 @@ import { AppContext } from "../../AppContext";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import { IoIosArrowDown } from "react-icons/io";
 export default function Header() {
-  const { toggle, handle_toggle, totalQuantity,handleGoBack } = useContext(AppContext);
+  const { toggle, handle_toggle, totalQuantity } = useContext(AppContext);
   return (
     <div className="header">
       <div className="nav">
@@ -24,7 +24,7 @@ export default function Header() {
               </Link>
             </li>
             <li className="li_dropdown">
-              <Link to="/product" style={{ textDecoration: "none" }} onClick={handleGoBack}>
+              <Link to="/product" style={{ textDecoration: "none" }}>
                 SHOP
               </Link>
               <ul className="menu2">
@@ -97,7 +97,7 @@ export default function Header() {
                 </Link>
               </li>
               <li className="handle_li">
-              <Link to="/product" style={{ textDecoration: "none" }} onClick={handleGoBack} >
+              <Link to="/product" style={{ textDecoration: "none" }} >
                   SHOP {" "}<span><IoIosArrowDown/></span>
                   </Link>
                 <ul className="menu2">

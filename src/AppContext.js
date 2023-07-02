@@ -207,8 +207,7 @@ export const AppProvider = ({ children }) => {
   };
   //
   const backtoShop = () => {
-    navigate('/product', { replace: true });
-    window.location.reload();
+    navigate('/product');
   }
   //
   const checkOut = () => {
@@ -306,10 +305,6 @@ export const AppProvider = ({ children }) => {
   //
   const currentProducts = filterList(product, currentPage)
   //
-  const handleGoBack = () => {
-    navigate('/product', { replace: true });
-    window.location.reload();
-  };
 
   //
   useEffect(() => {
@@ -406,7 +401,6 @@ export const AppProvider = ({ children }) => {
         productsPerPage,
         handlePageClick,
         currentProducts, 
-        handleGoBack
       }}
     >
       {children}
